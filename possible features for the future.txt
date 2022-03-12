@@ -1,0 +1,21 @@
+views, posts, comments on gardens for conversation and improvement of design
+https://www.youtube.com/watch?v=m3uhldUGVes good source for other features
+greenhouse automation features
+visual cad type designer plugged into an algorithm to calculate an efficient use of space with plants that work together
+weather plugin
+gps/zone plugin
+pest prevention
+disease prevention
+watering schedules
+soil preparation
+soil maintenance
+pollination (bees, remove netting at pollination time)
+nutrient calculation for plants and garden size
+seed starting space and temperature planning
+grafting/root transplant/cutting transplant
+
+needs better security before implementation
+donations
+email mailers
+purchasing
+advertising

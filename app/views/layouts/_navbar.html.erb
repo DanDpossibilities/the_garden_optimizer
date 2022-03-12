@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <%= link_to "Garden Optimizer", root_path, class:'navbar-brand'%>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to "Home", root_path, class:'nav-link'%>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Gardens", gardens_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Privacy Policy", privacy_policy_path, class:'nav-link'%>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <%#  I will reactivate these as I get to them %>
+        <%#= render 'search/form' %>             
+        <%= render 'layouts/notifications' %>
+        <%= render 'user/session_manager' %>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<%# © 2022 GitHub, Inc. altering this code from multiple tutorials to make it work.  I did pull this bootstrap layout from https://github.com/Deanout/blog_application/blob/main/app/views/layouts/_notification.html.erb if you wish to see differences %>

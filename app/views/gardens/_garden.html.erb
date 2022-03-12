@@ -1,7 +1,10 @@
 <div id="<%= dom_id garden %>">
+<%# work in logic hiding gardens that public = false %>
   <p>
     <strong>Garden name:</strong>
-    <%= garden.garden_name %>
+    <h2><%= garden.garden_name %></h2>
+    <h4>created by <%= garden.user.email %></h4>
+    <%# add something like this and iterated once plants (with plant_start_stop data) are connected <h6><%= pluralize(garden.plants, "plants") %><%#</h6> %>
   </p>
 
   <p>

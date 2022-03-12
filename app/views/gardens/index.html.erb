@@ -1,14 +1,15 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Gardens</h1>
-
-<div id="gardens">
-  <% @gardens.each do |garden| %>
-    <%= render garden %>
-    <p>
-      <%= link_to "Show this garden", garden %>
-    </p>
-  <% end %>
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+  <h1>Gardens</h1>
+  <%= link_to "New Garden", new_garden_path, class:"btn btn-primary"%>
+  <div id="gardens">
+    <% @gardens.each do |garden| %>
+      <%= render garden %>
+      <%#add plant count once plants are connected <h6><%= pluralize(garden.plants(count), "plants") %><%#</h6> %>
+      <p>
+        <%= link_to "Show this garden", garden %>
+      </p>
+    <% end %>
+  </div>
+  
 </div>
-
-<%= link_to "New garden", new_garden_path %>

@@ -1,5 +1,6 @@
 class GardensController < ApplicationController
   before_action :set_garden, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: %i[show index] #allows you to show gardens without being signed in, sign in to edit
 
   # GET /gardens or /gardens.json
   def index
@@ -8,6 +9,12 @@ class GardensController < ApplicationController
 
   # GET /gardens/1 or /gardens/1.json
   def show
+    # bit of logic to add once I add views
+    # @garden.update(views: @post.views +1)
+    # same as 
+    # views = @post.views +1
+    # @post.views = views
+    # @post.save
   end
 
   # GET /gardens/new

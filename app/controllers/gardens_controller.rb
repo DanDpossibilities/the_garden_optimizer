@@ -4,7 +4,7 @@ class GardensController < ApplicationController
 
   # GET /gardens or /gardens.json
   def index
-    @gardens = Garden.all
+    @gardens = Garden.all.order(created_at: :desc)
   end
 
   # GET /gardens/1 or /gardens/1.json
@@ -29,6 +29,7 @@ class GardensController < ApplicationController
   # POST /gardens or /gardens.json
   def create
     @garden = Garden.new(garden_params)
+    @garden.user = current_user
 
     respond_to do |format|
       if @garden.save

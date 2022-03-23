@@ -1,7 +1,6 @@
 <% if current_user %>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <%# <%= current_user.name %> <%# don't have name in the tables yet %>
       <%= current_user.name %>
     </a>
     <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
@@ -21,5 +20,3 @@
       <%= link_to "Login", new_user_session_path, class:'nav-link'%>
     </li>
   <% end %>
-
-<%# borrowed from https://github.com/Deanout/blog_application/blob/main/app/views/user/_session_manager.html.erb adapting as needed%>

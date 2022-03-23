@@ -1,5 +1,5 @@
 views, posts, comments on gardens for conversation and improvement of design
-https://www.youtube.com/watch?v=m3uhldUGVes good source for other features
+https://www.youtube.com/watch?v=m3uhldUGVes good source for other featuresUhOh
 greenhouse automation features
 visual cad type designer plugged into an algorithm to calculate an efficient use of space with plants that work together
 weather plugin

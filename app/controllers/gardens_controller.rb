@@ -30,6 +30,7 @@ class GardensController < ApplicationController
   def create
     @garden = Garden.new(garden_params)
     @garden.user = current_user
+    # @garden.plant = 
 
     respond_to do |format|
       if @garden.save

@@ -1,25 +1,27 @@
-<div id="<%= dom_id garden %>">
-<%# work in logic hiding gardens that public = false %>
-  <p>
-    <strong>Garden name:</strong>
-    <h2><%= garden.garden_name %></h2>
-    <h4>created by <%= link_to garden.user.name, user_path(garden.user) %></h4>
-    <%# add something like this and iterated once plants (with plant_start_stop data) are connected <h6><%= pluralize(garden.plants, "plants") %><%#</h6> %>
-  </p>
-
-  <p>
-    <strong>Start date:</strong>
-    <%= garden.start_date %>
-  </p>
-
-  <p>
-    <strong>Greenhouse:</strong>
-    <%= garden.greenhouse %>
-  </p>
-
-  <p>
-    <strong>Public:</strong>
-    <%= garden.public %>
-  </p>
-
+<div class="container">
+  <div id="<%= dom_id garden %>">
+  <%# work in logic hiding gardens that public = false %>
+    <p>
+      <strong>Garden name:</strong>
+      <h2><%= garden.garden_name %></h2>
+      <h4>created by <%= link_to garden.user.name, user_path(garden.user) %></h4>
+      <%# add something like this and iterated once plants (with plant_start_stop data) are connected <h6><%= pluralize(garden.plants, "plants") %><%#</h6> %>
+    </p>
+  
+    <p>
+      <strong>Start date:</strong>
+      <%= garden.start_date %>
+    </p>
+  
+    <p>
+      <strong>Greenhouse:</strong>
+      <%= garden.greenhouse %>
+    </p>
+  
+    <p>
+      <strong>Public:</strong>
+      <%= garden.public %>
+    </p>
+  
+  </div>
 </div>
